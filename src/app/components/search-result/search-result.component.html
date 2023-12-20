@@ -1,0 +1,9 @@
+<div class="container-fluid px-2">
+    <div class="">
+        <div class="card p-2 my-2">
+            <div class="" *ngFor="let user of data | keyvalue">
+                {{user.key}} : {{user.value}}
+            </div>
+        </div>
+    </div>
+</div>

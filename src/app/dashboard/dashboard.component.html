@@ -1,0 +1,18 @@
+<div class="container-fluid">
+    <div class="row">
+        <app-search-area (searchClicked)="onSearch()"></app-search-area>
+    </div>
+    <hr>
+    <div class="display-2 px-2" [appHighlight]="'red'" >Results</div>
+    <div class="row" *ngFor="let user of users">
+        <app-search-result
+            [data]="user"
+        ></app-search-result>
+        <div class="" #theLastUser></div>
+    </div>
+</div>
+<div class="container-fluid text-center pb-3" (appIntersectionObserver)="onSearch()" >
+    Loading...
+</div>
+
+

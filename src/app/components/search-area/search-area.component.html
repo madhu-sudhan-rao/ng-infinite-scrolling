@@ -1,0 +1,34 @@
+<div class="container-fluid p-2">
+    <div class="display-2" [appHighlight]="'green'">
+        Search
+    </div>
+    <div class="row mb-3">
+        <div class="col">
+            <div class="label">
+                <label for="">Origin</label>
+            </div>
+            <input type="text" class="form-control" name="" id="">
+        </div>
+        <div class="col">
+            <div class="label">
+                <label for="">Destination</label>
+            </div>
+            <input type="text" class="form-control" name="" id="">
+        </div>
+        <div class="col">
+            <div class="label">
+                <label for="">Trailer type</label>
+            </div>
+            <input type="text" class="form-control" name="" id="">
+        </div>
+        <div class="col">
+            <div class="label">
+                <label for="">Pick-up date</label>
+            </div>
+            <input type="date" class="form-control" name="" id="">
+        </div>
+    </div>
+    <div class="row px-2">
+        <button class="btn btn-primary" (click)="onSearch()">Search</button>
+    </div>
+</div>
